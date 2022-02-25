@@ -1,0 +1,15 @@
+// Servido com NODEJS com modulo HTTP Node
+const http = require("http");
+
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+
+    res.write("Hello World from HTTP Node");
+    res.end();
+
+});
+
+server.listen(port, () => {
+    console.log(`Servidor rodando na porta: ${port}`);
+})
